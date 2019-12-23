@@ -1,0 +1,149 @@
+.img-contain {
+  -webkit-background-size: contain!important;
+  background-size: contain!important;
+  background-repeat: no-repeat !important;
+  background-position: center!important;
+}
+.img-cover {
+  -webkit-background-size: cover!important;
+  background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-position: center!important;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-image: url("../images/blur-background-26350-27041-hd-wallpapers.jpg");
+  -webkit-background-size: cover!important;
+  background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-position: center!important;
+}
+#black-layer-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 99;
+  background-color: rgba(42, 42, 37, 0.8);
+}
+.arrow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: 200ms;
+}
+.arrow:hover {
+  transform: scale(1.1, 1.1);
+  transition: 200ms;
+}
+#main-carousel-block {
+  position: relative;
+  height: 300px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main-carousel-block > :first-child {
+  position: relative;
+  float: left;
+  z-index: 98;
+  background-image: url("../images/arrow-left.png");
+  -webkit-background-size: contain!important;
+  background-size: contain!important;
+  background-repeat: no-repeat !important;
+  background-position: center!important;
+}
+#main-carousel-block > :last-child {
+  position: relative;
+  float: right;
+  z-index: 98;
+  background-image: url("../images/arrow.png");
+  -webkit-background-size: contain!important;
+  background-size: contain!important;
+  background-repeat: no-repeat !important;
+  background-position: center!important;
+}
+#main-carousel-block > :nth-child(2) {
+  overflow: hidden;
+}
+#block-images-carousel {
+  position: relative;
+  height: 300px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  z-index: 1;
+}
+#block-images-carousel li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  position: relative;
+  height: 290px;
+  width: 270px;
+  margin: 0 15px;
+  border-radius: 3px;
+  -webkit-background-size: cover!important;
+  background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-position: center!important;
+}
+.full-size-img {
+  position: absolute;
+  height: 70%;
+  width: 60%;
+  z-index: 100;
+  -webkit-background-size: cover!important;
+  background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-position: center!important;
+}
+#block-images-carousel > li:hover .zoom-img {
+  opacity: 0.7;
+  transition: 200ms;
+}
+.zoom-img {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  opacity: 0;
+  background-image: url("../images/zoom.png");
+  z-index: 99;
+  transition: 200ms;
+  -webkit-background-size: contain!important;
+  background-size: contain!important;
+  background-repeat: no-repeat !important;
+  background-position: center!important;
+}
+.close-icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  top: -35px;
+  right: -35px;
+  background-image: url("../images/close_round_button-512.png");
+  transition: 100ms;
+  -webkit-background-size: contain!important;
+  background-size: contain!important;
+  background-repeat: no-repeat !important;
+  background-position: center!important;
+}
+.close-icon:hover {
+  transform: scale(1.1, 1.1);
+  transition: 200ms;
+}
